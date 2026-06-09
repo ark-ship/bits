@@ -17,8 +17,8 @@ export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
 
-  const FOLLOW_URL = "https://x.com/TinyBits";
-  const TWEET_URL = "https://x.com/TinyBits/status/123456789";
+  const FOLLOW_URL = "https://x.com/TinyBitsNFT/follow";
+  const TWEET_URL = "https://x.com/TinyBitsNFT/status/123456789";
 
   const cleanUsername = username.trim().replace(/^@+/, "");
   const cleanTweetUrl = tweetUrl.trim();
@@ -260,7 +260,7 @@ export default function Home() {
         </div>
 
         <footer className="footer">
-          <a href="https://x.com/TinyBits" target="_blank" rel="noreferrer">
+          <a href="https://x.com/TinyBitsNFT" target="_blank" rel="noreferrer">
             X
           </a>
 
