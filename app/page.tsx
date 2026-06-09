@@ -18,7 +18,7 @@ export default function Home() {
   const [submitError, setSubmitError] = useState("");
 
   const FOLLOW_URL = "https://x.com/TinyBitsNFT/";
-  const TWEET_URL = "https://x.com/TinyBitsNFT/status/123456789";
+  const TWEET_URL = "https://x.com/TinyBitsNFT/status/2064328090441121835?s=20";
 
   const cleanUsername = username.trim().replace(/^@+/, "");
   const cleanTweetUrl = tweetUrl.trim();
