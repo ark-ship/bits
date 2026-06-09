@@ -1,65 +1,272 @@
-import Image from "next/image";
+"use client";
+
+import { FormEvent, useMemo, useState } from "react";
+import { supabase } from "@/lib/supabaseClient";
+import "./globals.css";
 
 export default function Home() {
+  const [followDone, setFollowDone] = useState(false);
+  const [engageDone, setEngageDone] = useState(false);
+  const [tagDone, setTagDone] = useState(false);
+
+  const [username, setUsername] = useState("");
+  const [tweetUrl, setTweetUrl] = useState("");
+  const [wallet, setWallet] = useState("");
+
+  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
+
+  const FOLLOW_URL = "https://x.com/TinyBits";
+  const TWEET_URL = "https://x.com/TinyBits/status/123456789";
+
+  const cleanUsername = username.trim().replace(/^@+/, "");
+  const cleanTweetUrl = tweetUrl.trim();
+  const cleanWallet = wallet.trim().toLowerCase();
+
+  const isTweetUrlValid = useMemo(() => {
+    return /^https?:\/\/(x\.com|twitter\.com)\/[A-Za-z0-9_]+\/status\/[0-9]+/i.test(
+      cleanTweetUrl
+    );
+  }, [cleanTweetUrl]);
+
+  const isWalletValid = useMemo(() => {
+    return /^0x[a-f0-9]{40}$/.test(cleanWallet);
+  }, [cleanWallet]);
+
+  const tasksCompleted = followDone && engageDone && tagDone;
+
+  const canSubmit =
+    tasksCompleted &&
+    cleanUsername.length >= 2 &&
+    isTweetUrlValid &&
+    isWalletValid &&
+    !submitted &&
+    !isSubmitting;
+
+  function handleFollow() {
+    window.open(FOLLOW_URL, "_blank", "noopener,noreferrer");
+    setFollowDone(true);
+  }
+
+  function handleEngage() {
+    window.open(TWEET_URL, "_blank", "noopener,noreferrer");
+    setEngageDone(true);
+  }
+
+  function handleTagFrens() {
+    window.open(TWEET_URL, "_blank", "noopener,noreferrer");
+    setTagDone(true);
+  }
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+
+    if (!canSubmit) return;
+
+    setSubmitError("");
+    setIsSubmitting(true);
+
+    const insertData = {
+      username: `@${cleanUsername}`,
+      tweet_url: cleanTweetUrl,
+      wallet_address: cleanWallet,
+    };
+
+    const { error } = await supabase
+      .from("tiny_bits_whitelist")
+      .insert(insertData);
+
+    setIsSubmitting(false);
+
+    if (error) {
+      console.error("Supabase submit error:", error);
+
+      if (error.code === "23505") {
+        setSubmitError("Already submitted.");
+        return;
+      }
+
+      setSubmitError(error.message || "Submit failed. Please try again.");
+      return;
+    }
+
+    setSubmitted(true);
+  }
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="page">
+      <div className="scanlines" />
+
+      <div className="pixelStars">
+        {Array.from({ length: 42 }).map((_, i) => (
+          <span key={i} />
+        ))}
+      </div>
+
+      <section className="arcadeMachine">
+        <div className="machineTop">
+          <div className="light red" />
+
+          <div className="marquee">
+            <span>TINY BITS</span>
+          </div>
+
+          <div className="light blue" />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="screenWrap">
+          <div className="screen">
+            <div className="screenGlow" />
+
+            <div className="titleBlock">
+              <h1>Whitelist</h1>
+
+              <p className="subtitle">
+                Complete the tasks, tag 3 frens in the comment, then submit
+                your X username, tweet URL and wallet.
+              </p>
+            </div>
+
+            <div className="taskPanel">
+              <div className={`taskCard ${followDone ? "done" : ""}`}>
+                <div>
+                  <p className="taskLabel">TASK 01</p>
+                  <h3>Follow Tiny Bits</h3>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={handleFollow}
+                  className="pixelBtn"
+                >
+                  {followDone ? "DONE" : "FOLLOW"}
+                </button>
+              </div>
+
+              <div className={`taskCard ${engageDone ? "done" : ""}`}>
+                <div>
+                  <p className="taskLabel">TASK 02</p>
+                  <h3>Like &amp; RT post</h3>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={handleEngage}
+                  className="pixelBtn"
+                >
+                  {engageDone ? "DONE" : "LIKE & RT"}
+                </button>
+              </div>
+
+              <div className={`taskCard ${tagDone ? "done" : ""}`}>
+                <div>
+                  <p className="taskLabel">TASK 03</p>
+                  <h3>Tag 3 frens</h3>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={handleTagFrens}
+                  className="pixelBtn"
+                >
+                  {tagDone ? "DONE" : "TAG FRENS"}
+                </button>
+              </div>
+            </div>
+
+            <form
+              onSubmit={handleSubmit}
+              className={`submitPanel ${!tasksCompleted ? "locked" : ""}`}
+            >
+              {!tasksCompleted && (
+                <div className="lockOverlay">
+                  <div className="lockIcon">▣</div>
+                  <p>Complete all tasks to unlock submit.</p>
+                </div>
+              )}
+
+              <label>
+                <span>X Username</span>
+                <input
+                  type="text"
+                  placeholder="@username"
+                  value={username}
+                  disabled={!tasksCompleted || submitted || isSubmitting}
+                  onChange={(e) => setUsername(e.target.value)}
+                />
+              </label>
+
+              <label>
+                <span>Tweet URL</span>
+                <input
+                  type="text"
+                  placeholder="https://x.com/username/status/123..."
+                  value={tweetUrl}
+                  disabled={!tasksCompleted || submitted || isSubmitting}
+                  onChange={(e) => setTweetUrl(e.target.value)}
+                />
+              </label>
+
+              <label>
+                <span>Wallet Address</span>
+                <input
+                  type="text"
+                  placeholder="0x..."
+                  value={wallet}
+                  disabled={!tasksCompleted || submitted || isSubmitting}
+                  onChange={(e) => setWallet(e.target.value)}
+                />
+              </label>
+
+              {tasksCompleted && tweetUrl.length > 0 && !isTweetUrlValid && (
+                <p className="errorText">Invalid tweet URL.</p>
+              )}
+
+              {tasksCompleted && wallet.length > 0 && !isWalletValid && (
+                <p className="errorText">Invalid EVM wallet address.</p>
+              )}
+
+              {submitError && <p className="errorText">{submitError}</p>}
+
+              <button type="submit" disabled={!canSubmit} className="submitBtn">
+                {isSubmitting
+                  ? "SUBMITTING..."
+                  : submitted
+                    ? "SUBMITTED"
+                    : "SUBMIT"}
+              </button>
+
+              {submitted && (
+                <div className="successBox">
+                  <p>Submission received.</p>
+                  <span>@{cleanUsername}</span>
+                </div>
+              )}
+            </form>
+          </div>
         </div>
-      </main>
-    </div>
+
+        <div className="controlDeck">
+          <div className="joystick">
+            <div className="stick" />
+          </div>
+
+          <div className="arcadeButtons">
+            <span />
+            <span />
+            <span />
+          </div>
+        </div>
+
+        <footer className="footer">
+          <a href="https://x.com/TinyBits" target="_blank" rel="noreferrer">
+            X
+          </a>
+
+          <span>© 2026 Tiny Bits. All rights reserved.</span>
+        </footer>
+      </section>
+    </main>
   );
 }
