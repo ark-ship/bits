@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #664",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/664.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Gold"
+    },
+    {
+      "trait type": "Head",
+      "value": "Round"
+    },
+    {
+      "trait type": "Body",
+      "value": "Invader"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Small Eyes"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Wide Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Bottom Bits"
+    }
+  ]
+}

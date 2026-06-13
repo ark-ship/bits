@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #2008",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/2008.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Grey"
+    },
+    {
+      "trait type": "Head",
+      "value": "Twin Horn"
+    },
+    {
+      "trait type": "Body",
+      "value": "Blocky"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Cyclops"
+    },
+    {
+      "trait type": "Legs",
+      "value": "No Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Bottom Bits"
+    }
+  ]
+}

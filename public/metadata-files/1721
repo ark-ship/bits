@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #1721",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/1721.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Green"
+    },
+    {
+      "trait type": "Head",
+      "value": "Twin Horn"
+    },
+    {
+      "trait type": "Body",
+      "value": "Slim"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Cyclops"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Wide Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Top Bits"
+    }
+  ]
+}

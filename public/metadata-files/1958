@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #1958",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/1958.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Gold"
+    },
+    {
+      "trait type": "Head",
+      "value": "Low Head"
+    },
+    {
+      "trait type": "Body",
+      "value": "Wide"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Sleepy"
+    },
+    {
+      "trait type": "Legs",
+      "value": "No Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Top Bits"
+    }
+  ]
+}

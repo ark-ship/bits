@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #85",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/85.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Blue"
+    },
+    {
+      "trait type": "Head",
+      "value": "Twin Horn"
+    },
+    {
+      "trait type": "Body",
+      "value": "Blocky"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Sleepy"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Wide Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Side Bits"
+    }
+  ]
+}

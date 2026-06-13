@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #2124",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/2124.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Pink"
+    },
+    {
+      "trait type": "Head",
+      "value": "Round"
+    },
+    {
+      "trait type": "Body",
+      "value": "Alien"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Small Eyes"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Tiny Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Top Bits"
+    }
+  ]
+}

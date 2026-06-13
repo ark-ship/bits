@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #212",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/212.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Purple"
+    },
+    {
+      "trait type": "Head",
+      "value": "Flat"
+    },
+    {
+      "trait type": "Body",
+      "value": "Invader"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Cyclops"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Split Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Mixed"
+    }
+  ]
+}

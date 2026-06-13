@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #411",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/411.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Black"
+    },
+    {
+      "trait type": "Head",
+      "value": "Round"
+    },
+    {
+      "trait type": "Body",
+      "value": "Invader"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Sleepy"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Wide Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Mixed"
+    }
+  ]
+}

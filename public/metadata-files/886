@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #886",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/886.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Purple"
+    },
+    {
+      "trait type": "Head",
+      "value": "Twin Horn"
+    },
+    {
+      "trait type": "Body",
+      "value": "Wide"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Sleepy"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Tiny Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Top Bits"
+    }
+  ]
+}

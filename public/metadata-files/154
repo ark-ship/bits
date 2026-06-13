@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #154",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/154.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Red"
+    },
+    {
+      "trait type": "Head",
+      "value": "Flat"
+    },
+    {
+      "trait type": "Body",
+      "value": "Wide"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Two Eyes"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Split Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "None"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #429",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/429.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Brown"
+    },
+    {
+      "trait type": "Head",
+      "value": "Pointy"
+    },
+    {
+      "trait type": "Body",
+      "value": "Blocky"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Sleepy"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Short Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Top Bits"
+    }
+  ]
+}

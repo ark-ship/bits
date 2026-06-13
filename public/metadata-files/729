@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #729",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/729.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Orange"
+    },
+    {
+      "trait type": "Head",
+      "value": "Low Head"
+    },
+    {
+      "trait type": "Body",
+      "value": "Blocky"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Small Eyes"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Split Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Side Bits"
+    }
+  ]
+}

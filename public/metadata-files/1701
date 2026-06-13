@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #1701",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/1701.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Lime"
+    },
+    {
+      "trait type": "Head",
+      "value": "Twin Horn"
+    },
+    {
+      "trait type": "Body",
+      "value": "Slim"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Wide Visor"
+    },
+    {
+      "trait type": "Legs",
+      "value": "No Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Bottom Bits"
+    }
+  ]
+}

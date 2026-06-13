@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #764",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/764.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Pink"
+    },
+    {
+      "trait type": "Head",
+      "value": "Low Head"
+    },
+    {
+      "trait type": "Body",
+      "value": "Classic"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Wide Visor"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Tiny Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Center Dot"
+    }
+  ]
+}

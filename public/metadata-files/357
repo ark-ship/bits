@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #357",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/357.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Black"
+    },
+    {
+      "trait type": "Head",
+      "value": "Pointy"
+    },
+    {
+      "trait type": "Body",
+      "value": "Wide"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Cyclops"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Tiny Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Mixed"
+    }
+  ]
+}

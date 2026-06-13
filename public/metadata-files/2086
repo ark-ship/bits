@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #2086",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/2086.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Blue"
+    },
+    {
+      "trait type": "Head",
+      "value": "Low Head"
+    },
+    {
+      "trait type": "Body",
+      "value": "Invader"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Sleepy"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Tiny Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Center Dot"
+    }
+  ]
+}

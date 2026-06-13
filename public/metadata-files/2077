@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #2077",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/2077.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Purple"
+    },
+    {
+      "trait type": "Head",
+      "value": "Round"
+    },
+    {
+      "trait type": "Body",
+      "value": "Wide"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Cyclops"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Split Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Center Dot"
+    }
+  ]
+}

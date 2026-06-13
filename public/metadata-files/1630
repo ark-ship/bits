@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #1630",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/1630.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Blue"
+    },
+    {
+      "trait type": "Head",
+      "value": "Round"
+    },
+    {
+      "trait type": "Body",
+      "value": "Wide"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Wide Visor"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Tiny Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "None"
+    }
+  ]
+}

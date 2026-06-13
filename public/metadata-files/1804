@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #1804",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/1804.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Gold"
+    },
+    {
+      "trait type": "Head",
+      "value": "Pointy"
+    },
+    {
+      "trait type": "Body",
+      "value": "Slim"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Small Eyes"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Short Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Center Dot"
+    }
+  ]
+}

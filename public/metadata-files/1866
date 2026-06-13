@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #1866",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/1866.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Green"
+    },
+    {
+      "trait type": "Head",
+      "value": "Twin Horn"
+    },
+    {
+      "trait type": "Body",
+      "value": "Blocky"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Big Eyes"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Split Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Center Dot"
+    }
+  ]
+}

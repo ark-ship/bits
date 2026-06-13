@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #1068",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/1068.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Yellow"
+    },
+    {
+      "trait type": "Head",
+      "value": "Flat"
+    },
+    {
+      "trait type": "Body",
+      "value": "Invader"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Cyclops"
+    },
+    {
+      "trait type": "Legs",
+      "value": "No Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Bottom Bits"
+    }
+  ]
+}

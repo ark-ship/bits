@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #2196",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/2196.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Gold"
+    },
+    {
+      "trait type": "Head",
+      "value": "Round"
+    },
+    {
+      "trait type": "Body",
+      "value": "Classic"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Big Eyes"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Wide Legs"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Mixed"
+    }
+  ]
+}

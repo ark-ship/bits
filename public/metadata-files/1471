@@ -1,0 +1,31 @@
+{
+  "name": "Tiny Bits #1471",
+  "description": "Tiny pixel world built for collectors who love simple art.",
+  "image": "https://tinybits.fun/images/1471.png",
+  "attributes": [
+    {
+      "trait type": "Color",
+      "value": "Black"
+    },
+    {
+      "trait type": "Head",
+      "value": "Pointy"
+    },
+    {
+      "trait type": "Body",
+      "value": "Invader"
+    },
+    {
+      "trait type": "Eyes",
+      "value": "Two Eyes"
+    },
+    {
+      "trait type": "Legs",
+      "value": "Four Feet"
+    },
+    {
+      "trait type": "Detail",
+      "value": "Side Bits"
+    }
+  ]
+}
